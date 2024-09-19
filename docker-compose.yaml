@@ -12,14 +12,14 @@ services:
       - netflix_network
 
   movie-catalog:
-    image: 700935310038.dkr.ecr.us-east-1.amazonaws.com/ai-tsadok/netflix-catalog:latest
+    image: 700935310038.dkr.ecr.us-east-1.amazonaws.com/ai-tanishq/netflix-catalog:latest
     expose:
       - "8080"
     networks:
       - netflix_network
 
   frontend:
-    image: 700935310038.dkr.ecr.us-east-1.amazonaws.com/ai-tsadok/netflix-frontend:latest
+    image: 700935310038.dkr.ecr.us-east-1.amazonaws.com/ai-tanishq/netflix-frontend:latest
     environment:
       - MOVIE_CATALOG_SERVICE=http://movie-catalog:8080
     expose:
