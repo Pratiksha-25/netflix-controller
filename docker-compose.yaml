@@ -12,7 +12,7 @@ services:
       - netflix_network
 
   movie-catalog:
-    image: 700935310038.dkr.ecr.us-east-1.amazonaws.com/ai-tanishq/netflix-catalog:latest
+    image: 700935310038.dkr.ecr.us-east-1.amazonaws.com/dev-ptarz/netflix
     expose:
       - "8080"
     networks:
